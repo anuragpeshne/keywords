@@ -1,0 +1,3 @@
+[submodule "wordfiles"]
+	path = wordfiles
+	url = https://github.com/IDMComputerSolutions/wordfiles.git
