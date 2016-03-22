@@ -6,7 +6,9 @@ import fileinput
 startPattern = re.compile('/C(\d)[ "]' + '.*' +
                           '(?:keyword)' + '|' +
                           '(?:reserved)' + '|' +
-                          '(?:command)',
+                          '(?:command)' + '|' +
+                          '(?:statement)'+ '|' +
+                          '(?:structure)',
                           re.IGNORECASE)
 
 endSection = None
