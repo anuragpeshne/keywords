@@ -3,12 +3,13 @@
 import re
 import fileinput
 
-startPattern = re.compile('/C(\d)[ "]' + '.*' +
-                          '(?:keyword)' + '|' +
+startPattern = re.compile('(?:/C1\s*$)' + '|' +
+                          '(?:/C(\d)[ "]' + '.*' +
+                          '(?:key ?word)' + '|' +
                           '(?:reserved)' + '|' +
                           '(?:command)' + '|' +
                           '(?:statement)'+ '|' +
-                          '(?:structure)',
+                          '(?:structure))',
                           re.IGNORECASE)
 
 endSection = None
